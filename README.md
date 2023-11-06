@@ -1,6 +1,3 @@
-De acuerdo, aquí tienes el texto del archivo readme:
-
-
 # Introducción
 
 Este proyecto es una página web simple desarrollada en HTML, CSS, PHP y JavaScript. La página utiliza una base de datos MySQL para almacenar sus datos.
@@ -24,11 +21,10 @@ Para instalar el proyecto, siga estos pasos:
 
 Para acceder a la página, abra un navegador web y vaya a la siguiente dirección:
 
-
+```
 http://localhost/[nombre-del-proyecto]
 ```
 
-```
 **Descripción del proyecto**
 
 La página web consta de las siguientes páginas:
@@ -61,11 +57,7 @@ Una vez que el usuario envía el formulario, se ejecuta un script de PHP para in
 **Explicación adicional**
 
 Para obtener más información sobre cómo instalar XAMP y ejecutar el servidor apache+mysql, consulte la documentación de XAMP.
-```
 
-**Cambios que vienen**
+**Cambios por añadir**
 
-* Se agregará la opción para que los usuarios puedan votar por las entradas.
-* Se agregará la opción para que los usuarios puedan comentar las entradas.
-
-Espero que este readme sea de tu agrado.```
+* Se agregará la opción para que los usuarios puedan agregar imagenes a las entradas.
