@@ -31,13 +31,6 @@ La página web consta de las siguientes páginas:
 
 * **Home:** Página principal de la página, donde se muestra una breve descripción del creador y el uso de la página.
 * **About:** Página con información acerca del creador y sus habilidades.
-* **News:** Página para ver las entradas enviadas por los usuarios.
-
-La página **News** tiene dos secciones:
-
-* **News:** Sección donde se muestran las entradas enviadas por los usuarios.
-* **News0:** Sección si no hay entradas disponibles para mostrar.
-
 * **Enviar sugerencia:** Sección para enviar una nueva entrada.
 Para enviar una nueva entrada, el usuario debe completar un formulario con los siguientes campos:
 
@@ -46,6 +39,13 @@ Para enviar una nueva entrada, el usuario debe completar un formulario con los s
 * **Sugerencia:** Contenido de la entrada.
 
 Una vez que el usuario envía el formulario, se ejecuta un script de PHP para insertar la nueva entrada en la base de datos. Luego, el usuario es redirigido a la página **News** para ver la nueva entrada.
+
+* **News:** Página para ver las entradas enviadas por los usuarios.
+
+La página **News** tiene dos secciones:
+
+* **News:** Sección donde se muestran las entradas enviadas por los usuarios.
+* **News0:** Sección si no hay entradas disponibles para mostrar.
 
 **Explicación adicional**
 
