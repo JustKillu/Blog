@@ -36,8 +36,9 @@ La página web consta de las siguientes páginas:
 La página **News** tiene dos secciones:
 
 * **News:** Sección donde se muestran las entradas enviadas por los usuarios.
-* **Enviar sugerencia:** Sección para enviar una nueva entrada.
+* **News0:** Sección si no hay entradas disponibles para mostrar.
 
+* **Enviar sugerencia:** Sección para enviar una nueva entrada.
 Para enviar una nueva entrada, el usuario debe completar un formulario con los siguientes campos:
 
 * **Autor:** Nombre del autor de la entrada.
@@ -45,14 +46,6 @@ Para enviar una nueva entrada, el usuario debe completar un formulario con los s
 * **Sugerencia:** Contenido de la entrada.
 
 Una vez que el usuario envía el formulario, se ejecuta un script de PHP para insertar la nueva entrada en la base de datos. Luego, el usuario es redirigido a la página **News** para ver la nueva entrada.
-
-**Cambios realizados**
-
-* Se agregaron las siguientes secciones:
-    * **Descripción del proyecto**
-    * **Enviar sugerencia**
-* Se agregaron los siguientes cambios a la sección **Enviar sugerencia:**
-    * Se agregó la opción para subir imágenes y videos.
 
 **Explicación adicional**
 
