@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>KilluBlog</title>
+  <link rel="stylesheet" href="css/enviar.css">
+</head>
+<body>
+  <header class="header">
+    <div class="contendor1">
+      <img src="images/blue_eyes.png" class="blue-eyes" />
+      <h1 class="title">
+        <span>Killu</span>Blog
+      </h1>
+    </div>
+    <nav class="nav">
+      <a href="home.html" >Home</a>
+      <a href="about.html">About</a>
+      <a href="news.php">News</a>
+      <a href="enviar_sugerencia.html" class="active">Enviar Sugerencia</a>
+    </nav>
+  </header>
+  <div class="recuadro">
+  
+    <form action="scripts/submit.php" method="post" onsubmit="return validateForm()" name="myForm">
+      <label for="fname">Autor:</label><br>
+      <input type="text" id="autor" name="autor"><br>
+      <label for="lname">Correo Electrónico:</label><br>
+      <input type="text" id="correo" name="correo"><br>
+      <label for="lname">Sugerencia:</label><br>
+      <input type="text" id="sugerencia" name="sugerencia"><br>
+      <input type="submit" value="Enviar" >
+    </form>
+    
+  </div>
+  <script>
+    function validateForm() {
+      var autor = document.forms["myForm"]["autor"].value;
+      var correo = document.forms["myForm"]["correo"].value;
+      var sugerencia = document.forms["myForm"]["sugerencia"].value;
+      if (autor == "" || correo == "" || sugerencia == "") {
+        alert("Debes rellenar todos los campos.");
+        return false;
+      }else{
+        alert("¡ Se ha enviado con éxito la sugerencia !")
+        return true;
+      }
+    }
+    </script>
+    
+</body>
+<footer class="footer">
+  <div class="contendor2">
+    <img src="images/galatic_kuriboh.png" class="galatic_kuriboh" />
+    <h3 class="title1">
+      Developed by <span>|</span><a href="https://github.com/JustKillu/" class="akilu">Killu</a>
+    </h3>
+  </div>
+</footer>
+</html>

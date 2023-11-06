@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia';
+  background-color: #212129;
+}
+
+header {
+  background-color: #1A1A20;
+  color: #fff;
+  border-bottom: 1px solid #33333f;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+h1.title span {
+  color: #74DBE7;
+}
+
+.recuadro {
+  position: fixed;
+  background-color: #33333F;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 25%;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  width: 50%;
+  box-shadow: 15px 5px 7px #1A1A20 ;
+  animation-duration: 0.7s;
+  animation-name: libro;
+  z-index: -1;
+}
+
+@keyframes libro  {
+from{
+  opacity: 0%;
+  margin-top: -100%;
+}
+to{
+  
+  opacity: 100%;
+}
+}
+
+.recuadro h1 {
+  color: #ffffff;
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.recuadro p {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1 1.5rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  background-color: #000 transparent;
+}
+.nav a:hover{
+  background-color: #26252d;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right:15px;
+  cursor: pointer;
+}
+.nav a.active {
+  background-color: #26252d;
+  color: white;
+}
+.red-eyes {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  margin-top: 23%;
+  margin-left: 38%;
+  margin-right: 38%;
+  z-index: -1;
+  animation-duration: 0.7s;
+  animation-name: libro1;
+}
+
+@keyframes libro1  {
+from{
+  opacity: 0%;
+  margin-top: 100%;
+}
+to{
+  
+  opacity: 100%;
+}
+}
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contendor1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-eyes {
+  width: 50px;
+  height: 50px;
+  margin-right: 0px;
+  display: inline-block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1A1A20;
+  color: #fff;
+  border-top: 1px solid #33333f;
+  
+}
+.contendor2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 80px;
+}
+h3.title1 span {
+  color: #33333f;
+
+}
+.galatic_kuriboh {
+  width: 50px;
+  height: 50px;
+margin-bottom: 1px;
+  display: inline-block;
+}
+
+.akilu {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.galaxy_eyes {
+  width: 80%;
+  height: 80%;
+  top:0px;
+}
+
