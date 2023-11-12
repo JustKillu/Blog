@@ -15,12 +15,22 @@
         <span>Killu</span>Blog
       </h1>
     </div>
-    <nav class="nav">
-      <a href="home.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="news.php">News</a>
-      <a href="enviar_sugerencia.html">Enviar Sugerencia</a>
+    <button id="toggleButton" class="nav-link">☰</button>
+    <nav class="nav" id="navbar">
+      <div class="nav-links">
+        <a href="home.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.php" class="nav-link">News</a>
+        <a href="enviar_sugerencia.html" class="nav-link">Enviar Sugerencia</a>
+      </div>
     </nav>
+    
+    <script>
+document.getElementById("toggleButton").addEventListener("click", function() {
+  var nav = document.getElementById("navbar");
+  nav.classList.toggle("show");
+});
+    </script>
   </header>
   <div class="recuadro">
     <h1>¡Bienvenido a mi página web!</h1>
@@ -32,15 +42,16 @@
     </p>
   </div>
   <img src="images/red_eyes.png" class="red-eyes" />
+  <footer class="footer">
+    <div class="contendor2">
+      <img src="images/galatic_kuriboh.png" class="galatic_kuriboh" />
+      <h3 class="title1">
+        Developed by <span>|</span><a href="https://github.com/JustKillu/" class="akilu">Killu</a>
+      </h3>
+      
+      
+    </div>
+  </footer>
 </body>
-<footer class="footer">
-  <div class="contendor2">
-    <img src="images/galatic_kuriboh.png" class="galatic_kuriboh" />
-    <h3 class="title1">
-      Developed by <span>|</span><a href="https://github.com/JustKillu/" class="akilu">Killu</a>
-    </h3>
-    
-    
-  </div>
-</footer>
+
 </html>

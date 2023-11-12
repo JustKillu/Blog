@@ -24,12 +24,22 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
         <span>Killu</span>Blog
       </h1>
     </div>
-    <nav class="nav">
-      <a href="home.html">Home</a>
-      <a href="about.html" >About</a>
-      <a href="news.php" class="active">News</a>
-      <a href="enviar_sugerencia.html">Enviar Sugerencia</a>
+    <button id="toggleButton" class="nav-link">☰</button>
+    <nav class="nav" id="navbar">
+      <div class="nav-links">
+        <a href="home.html" class="nav-link ">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.php" class="nav-link active">News</a>
+        <a href="enviar_sugerencia.html" class="nav-link">Enviar Sugerencia</a>
+      </div>
     </nav>
+    
+    <script>
+document.getElementById("toggleButton").addEventListener("click", function() {
+  var nav = document.getElementById("navbar");
+  nav.classList.toggle("show");
+});
+    </script>
   </header>
 
   <?php if (empty($result)) { ?>
@@ -51,9 +61,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
       </ul>
     
   <?php } ?>
-  
-</body>
-<footer class="footer" >
+  <footer class="footer" >
   <div class="contendor2">
     <img src="images/galatic_kuriboh.png" class="galatic_kuriboh" />
     <h3 class="title1">
@@ -61,5 +69,7 @@ $result = $query->fetchAll(PDO::FETCH_ASSOC);
     </h3>
   </div>
 </footer>
+</body>
+
 
 </html>
