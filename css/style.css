@@ -128,26 +128,7 @@ a {
   background-color: #26252d;
   color: white;
 }
-.red-eyes {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  margin: 1% auto 10%;
-  z-index: -1;
-  animation-duration: 0.7s;
-  animation-name: libro1;
-}
 
-@keyframes libro1  {
-from{
-  opacity: 0%;
-  margin-top: 500%;
-}
-to{
-  
-  opacity: 100%;
-}
-}
 h2 {
   font-size: 1.5rem;
   text-align: center;
@@ -204,3 +185,44 @@ margin-bottom: 1px;
   top:0px;
 }
 
+.carousel {
+  position: relative;
+  max-width: 200px;
+  margin: 1% auto 10%;
+  }
+
+.carousel__img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.carousel__button {
+  color: white;
+  font-size: 15px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color:#1A1A20;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+}
+
+.carousel__button--left {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel__button--right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel__button:hover {
+  background-color: #33333F;
+}

@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
   <header class="header">
     <div class="contendor1">
@@ -24,12 +25,12 @@
         <a href="enviar_sugerencia.html" class="nav-link">Enviar Sugerencia</a>
       </div>
     </nav>
-    
+
     <script>
-document.getElementById("toggleButton").addEventListener("click", function() {
-  var nav = document.getElementById("navbar");
-  nav.classList.toggle("show");
-});
+      document.getElementById("toggleButton").addEventListener("click", function () {
+        var nav = document.getElementById("navbar");
+        nav.classList.toggle("show");
+      });
     </script>
   </header>
   <div class="recuadro">
@@ -41,15 +42,42 @@ document.getElementById("toggleButton").addEventListener("click", function() {
       Si tienes alguna pregunta ó sugerencia, no dudes en ponerte en contacto conmigo.
     </p>
   </div>
-  <img src="images/red_eyes.png" class="red-eyes" />
+  <div class="carousel">
+    <button class="carousel__button carousel__button--left" >&#10094;</button>
+    <img class="carousel__img" src="images/red_eyes.png" alt="Image 1">
+    <img class="carousel__img" src="images/galaxy_eyes.png" alt="Image 2">
+    <img class="carousel__img" src="images/blue_eyes.png" alt="Image 3">
+    <img class="carousel__img" src="images/galatic_kuriboh.png" alt="Image 4">
+    <button class="carousel__button carousel__button--right" >&#10095;</button>
+</div>
+<script>
+var images = document.querySelectorAll('.carousel__img');
+var currentIndex = 0;
+
+function showImage(index) {
+    images.forEach(img => img.style.display = 'none');
+    images[index].style.display = 'block';
+}
+
+document.querySelector('.carousel__button--left').addEventListener('click', function() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+    showImage(currentIndex);
+});
+
+document.querySelector('.carousel__button--right').addEventListener('click', function() {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+    showImage(currentIndex);
+});
+
+showImage(currentIndex);
+
+</script>
   <footer class="footer">
     <div class="contendor2">
       <img src="images/galatic_kuriboh.png" class="galatic_kuriboh" />
       <h3 class="title1">
         Developed by <span>|</span><a href="https://github.com/JustKillu/" class="akilu">Killu</a>
       </h3>
-      
-      
     </div>
   </footer>
 </body>
