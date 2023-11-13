@@ -2,7 +2,8 @@
 
 Este proyecto es una página web simple desarrollada en HTML, CSS, PHP, JavaScript y Webpack. La página utiliza una base de datos MySQL para almacenar sus datos.
 
-[https://prnt.sc/LtSDpj8tE9pW]
+![image](https://github.com/JustKillu/Blog/assets/60795569/446841bd-856f-4ee1-98d0-733d3f05b396)
+
 
 **Requisitos**
 
