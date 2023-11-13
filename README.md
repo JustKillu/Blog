@@ -1,9 +1,13 @@
 # Introducción
 
-Este proyecto es una página web simple desarrollada en HTML, CSS, PHP y JavaScript. La página utiliza una base de datos MySQL para almacenar sus datos.
+Este proyecto es una página web simple desarrollada en HTML, CSS, PHP, JavaScript y Webpack. La página utiliza una base de datos MySQL para almacenar sus datos.
+
+[https://prnt.sc/LtSDpj8tE9pW]
 
 **Requisitos**
 
+* Node.js 16.x o superior
+* npm 8.x o superior
 * PHP 7.4 o superior
 * MySQL 5.7 o superior
 * Apache 2.4 o superior
@@ -12,18 +16,26 @@ Este proyecto es una página web simple desarrollada en HTML, CSS, PHP y JavaScr
 
 Para instalar el proyecto, siga estos pasos:
 
-1. Instale **XAMP** o **WAMP**.
-2. Inicie el servidor Apache y MySQL.
-3. Descargue el proyecto de GitHub.
-4. Descomprima el proyecto en la carpeta `htdocs` de XAMP o WAMP.
+1. Instale Node.js y npm.
+2. Instale las dependencias del proyecto con el siguiente comando:
 
-**Uso**
 
-Para acceder a la página, abra un navegador web y vaya a la siguiente dirección:
+npm install
+```
+
+3. Ejecute el webpack para compilar el proyecto:
 
 ```
-http://localhost/[nombre-del-proyecto]
+npm run build
 ```
+
+4. Los archivos compilados se encontrarán en la carpeta `dist`.
+
+5. Para acceder a la página, abra un navegador web y vaya a la siguiente dirección:
+
+```
+http://localhost/[nombre-del-proyecto]/dist
+
 
 **Descripción del proyecto**
 
@@ -32,25 +44,22 @@ La página web consta de las siguientes páginas:
 * **Home:** Página principal de la página, donde se muestra una breve descripción del creador y el uso de la página.
 * **About:** Página con información acerca del creador y sus habilidades.
 * **Enviar sugerencia:** Sección para enviar una nueva entrada.
-Para enviar una nueva entrada, el usuario debe completar un formulario con los siguientes campos:
-
-* **Autor:** Nombre del autor de la entrada.
-* **Correo electrónico:** Correo electrónico del autor de la entrada.
-* **Sugerencia:** Contenido de la entrada.
-
-Una vez que el usuario envía el formulario, se ejecuta un script de PHP para insertar la nueva entrada en la base de datos. Luego, el usuario es redirigido a la página **News** para ver la nueva entrada.
-
 * **News:** Página para ver las entradas enviadas por los usuarios.
 
-La página **News** tiene dos secciones:
+**Cambios recientes**
 
-* **News:** Sección donde se muestran las entradas enviadas por los usuarios.
-* **News0:** Sección si no hay entradas disponibles para mostrar.
+* Se agregó un carrusel de imágenes a la página Home.
+* Se agregó un efecto parallax a la página About.
+* Todas las páginas ahora son de diseño responsive.
 
-**Explicación adicional**
+**Características del proyecto**
 
-Para obtener más información sobre cómo instalar XAMP y ejecutar el servidor apache+mysql, consulte la documentación de XAMP.
-
-**Cambios por añadir**
-
-* Se agregará la opción para que los usuarios puedan agregar imagenes a las entradas.
+* La página web está desarrollada en HTML, CSS, PHP, JavaScript y Webpack.
+* La página utiliza una base de datos MySQL para almacenar sus datos.
+* La página consta de las siguientes páginas:
+    * Home
+    * About
+    * Enviar sugerencia
+    * News
+* Las entradas enviadas por los usuarios se muestran en la página News.
+* Los usuarios pueden agregar imágenes a las entradas en una futura actualización.
