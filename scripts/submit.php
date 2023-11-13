@@ -20,7 +20,7 @@ $sql = "INSERT INTO entradas (`Autor`, `Correo Electronico`, `Sugerencia`)
 VALUES ('$autor', '$correo', '$sugerencia')";
 
 if ($conn->query($sql) === TRUE) {
-  header("Location: ../news.php");
+  header("Location: ../dist/news.php");
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
